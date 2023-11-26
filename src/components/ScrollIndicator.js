@@ -1,5 +1,3 @@
-// components/ScrollIndicator.tsx
-"use client";
 import { useEffect, useState } from "react";
 
 const ScrollIndicator = () => {
@@ -29,7 +27,7 @@ const ScrollIndicator = () => {
   }, []);
 
   return (
-    <div className="bg-indigo-200 fixed top-0 h-1 w-screen">
+    <div className="bg-indigo-200 fixed top-0 left-0 h-1 w-screen">
       <div
         className="bg-indigo-400 h-full"
         style={{ width: scroll + "%" }}

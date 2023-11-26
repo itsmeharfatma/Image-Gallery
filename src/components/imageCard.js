@@ -6,7 +6,7 @@ const ImageCard = ({ image }) => {
 
     return (
         <section className='fontStyle'>
-            <div className='relative  rounded-lg overflow-hidden mt-12 mr-6 shadow-xl bg-gray-100 w-[24rem] h-[30rem] border border-gray-300'>
+            <div className='relative  rounded-lg overflow-hidden mt-10 mr-6 shadow-xl bg-gray-100 w-[22rem] h-[30rem] border border-gray-300'>
                 <img src={image.webformatURL} alt='' className='w-full h-64' />
                 <div className='px-6 py-4'>
                     <div className='font-bold text-purple-500 text-xl mb-2'>
