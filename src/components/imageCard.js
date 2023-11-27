@@ -6,7 +6,7 @@ const ImageCard = ({ image }) => {
 
     return (
         <section className='fontStyle'>
-            <div className='relative  rounded-lg overflow-hidden mt-10 mr-6 shadow-xl bg-gray-100 w-[22rem] h-[30rem] border border-gray-300'>
+            <div className='relative  rounded-lg overflow-hidden mt-10 mr-6 shadow-lg bg-gray-100 w-[22rem] h-[30rem] border border-gray-300'>
                 <img src={image.webformatURL} alt='' className='w-full h-64' />
                 <div className='px-6 py-4'>
                     <div className='font-bold text-purple-500 text-xl mb-2'>
@@ -18,11 +18,11 @@ const ImageCard = ({ image }) => {
                             <span className='text-xs'>{image.likes}</span>
                         </li>
                         <li>
-                            <i class="fa-solid fa-eye fa-xs mr-1" style={{ color: '#90939d' }}></i><span className='font-medium text-sm'>Views: </span>
+                            <i class="fa-solid fa-eye fa-xs mr-1" style={{ color: '#46b7ce' }}></i><span className='font-medium text-sm'>Views: </span>
                             <span className='text-xs'>{image.views}</span>
                         </li>
                         <li>
-                            <i class="fa-solid fa-download fa-xs mr-1.5" style={{ color: '#90939d' }}></i><span className='font-medium text-sm'>Downloads: </span>
+                            <i class="fa-solid fa-download fa-sm mr-1.5" style={{ color: '#adadad' }}></i><span className='font-medium text-sm'>Downloads: </span>
                             <span className='text-xs'>{image.downloads}</span>
                         </li>
                     </ul>
