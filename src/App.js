@@ -22,17 +22,19 @@ function App() {
 
   return (
     <section className='bg-gray-50'>
-      <div className='container mx-auto py-10 fontStyle'>
+      <div className='max-container mx-auto py-10 fontStyle'>
         <ImageSearch searchText={(text) => setTerm(text)} />
 
-        {!isLoading && images.length === 0 && <h1 className='text-5xl text-center mx-auto mt-52 mb-64'>No Images Found...</h1>}
+        {!isLoading && images.length === 0 && <h1 className='text-5xl text-center mx-auto mt-44 mb-56'>No Images Found...</h1>}
         {/* grid grid-cols-3 gap-4 */}
-        {isLoading ? <h1 className='text-6xl text-center mx-auto mt-52 mb-64'>Loading...</h1> : <div className='flex flex-wrap items-center justify-center'>
+        {isLoading ? <h1 className='text-6xl text-center mx-auto mt-44 mb-56'>Loading...</h1> : <div className='flex flex-wrap items-center justify-center'>
           {images.map(image => (
             <ImageCard key={image.id} image={image} />
           ))}
         </div>}
+
         <ScrollIndicator />
+
         <ScrollToTop smooth top="20" className="override" style={{ borderRadius: "25px", backgroundColor: '#1c8a65' }} component={<i class="fa-solid fa-arrow-up fa-lg" style={{ color: "white" }}></i>} />
       </div>
     </section>

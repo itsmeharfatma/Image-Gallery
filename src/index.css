@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer components {
+    .max-container {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
 
-    /* Font */
     .fontStyle {
         font-family: 'Montserrat', sans-serif;
     }
