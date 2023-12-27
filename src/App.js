@@ -21,7 +21,7 @@ function App() {
   }, [term]);
 
   return (
-    <section className='bg-gray-50'>
+    <section>
       <div className='max-container mx-auto py-12 fontStyle'>
         <ImageSearch searchText={(text) => setTerm(text)} />
 

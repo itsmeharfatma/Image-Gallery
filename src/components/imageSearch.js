@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '../asset/pixie-logo.png';
 
 const ImageSearch = ({ searchText }) => {
     const [text, setText] = useState('');
@@ -9,9 +10,14 @@ const ImageSearch = ({ searchText }) => {
     }
 
     return (
-        <div className='flex flex-1 justify-between items-center md:px-20'>
+        <div className='flex flex-1 justify-between items-center md:px-14'>
             <div>
-                <h1 className='text-4xl font-bold'>Pixie</h1>
+                <img
+                    src={logo}
+                    alt='Logo'
+                    width={130}
+                    height={29}
+                />
             </div>
             <div className='w-1/3 rounded-full border border-1 border-teal-500 overflow-hidden bg-gray-100'>
                 <form onSubmit={onSubmit} className='w-full max-w-lg'>
