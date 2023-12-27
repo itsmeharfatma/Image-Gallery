@@ -5,8 +5,8 @@ const ImageCard = ({ image }) => {
     const tags = image.tags.split(",");
 
     return (
-        <section className='fontStyle'>
-            <div className='relative rounded-lg overflow-hidden mt-10 mr-4 shadow-lg bg-gray-100 w-[22rem] h-[30rem] border border-gray-300'>
+        <section>
+            <div className='relative rounded-lg overflow-hidden mt-8 mr-4 shadow-lg bg-gray-100 w-[22rem] h-[30rem] border border-gray-300'>
                 <img src={image.webformatURL} alt='' className='w-full h-64' />
                 <div className='px-6 py-4'>
                     <div className='font-bold text-purple-500 text-xl mb-2'>
