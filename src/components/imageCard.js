@@ -14,15 +14,15 @@ const ImageCard = ({ image }) => {
                     </div>
                     <ul className='text-gray-900'>
                         <li>
-                            <i className="fa-solid fa-heart fa-sm mr-1" style={{ color: '#c82828' }}></i><span className='font-medium text-sm'>Likes: </span>
+                            <i class="fa-solid fa-heart fa-sm mr-1" style={{ color: '#c82828' }}></i><span className='font-medium text-sm'>Likes: </span>
                             <span className='text-xs'>{image.likes}</span>
                         </li>
                         <li>
-                            <i className="fa-solid fa-eye fa-xs mr-1" style={{ color: '#46b7ce' }}></i><span className='font-medium text-sm'>Views: </span>
+                            <i class="fa-solid fa-eye fa-xs mr-1" style={{ color: '#46b7ce' }}></i><span className='font-medium text-sm'>Views: </span>
                             <span className='text-xs'>{image.views}</span>
                         </li>
                         <li>
-                            <i className="fa-solid fa-download fa-sm mr-1.5" style={{ color: '#adadad' }}></i><span className='font-medium text-sm'>Downloads: </span>
+                            <i class="fa-solid fa-download fa-sm mr-1.5" style={{ color: '#adadad' }}></i><span className='font-medium text-sm'>Downloads: </span>
                             <span className='text-xs'>{image.downloads}</span>
                         </li>
                     </ul>
