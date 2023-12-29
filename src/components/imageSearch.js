@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import logo from '../asset/pixie-logo.png';
 
-const ImageSearch = ({ searchText }) => {
+const ImageSearch = ({ setTerm }) => {
     const [text, setText] = useState('');
 
     const onSubmit = (e) => {
         e.preventDefault();
-        searchText(text);
+        setTerm(text);
     }
 
     return (
