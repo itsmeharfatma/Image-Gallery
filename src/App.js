@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import ImageCard from './components/ImageCard';
+import ImageCard from './components/ImageCard';
 import ImageSearch from './components/ImageSearch';
 import ScrollIndicator from './components/ScrollIndicator';
 import ScrollToTop from "react-scroll-to-top";
@@ -27,11 +27,11 @@ function App() {
 
         {!isLoading && images.length === 0 && <h1 className='text-5xl text-center mx-auto mt-44 mb-56'>No Images Found...</h1>}
         
-        {/* {isLoading ? <h1 className='text-6xl text-center mx-auto mt-44 mb-56'>Loading...</h1> : <div className='flex flex-wrap items-center justify-center'>
+        {isLoading ? <h1 className='text-6xl text-center mx-auto mt-44 mb-56'>Loading...</h1> : <div className='flex flex-wrap items-center justify-center'>
           {images.map(image => (
             <ImageCard key={image.id} image={image} />
           ))}
-        </div>} */}
+        </div>}
 
         <ScrollIndicator />
 
