@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from '../asset/pixie-logo.png';
 
 const ImageSearch = ({ setTerm }) => {
     const [text, setText] = useState('');
@@ -13,7 +12,7 @@ const ImageSearch = ({ setTerm }) => {
         <div className='flex flex-1 justify-between items-center md:px-14'>
             <div>
                 <img
-                    src={logo}
+                    src='/asset/pixie-logo.png'
                     alt='Logo'
                     width={120}
                     height={29}
