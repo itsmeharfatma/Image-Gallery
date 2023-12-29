@@ -15,7 +15,7 @@ const ImageSearch = ({ searchText }) => {
                 <img
                     src={logo}
                     alt='Logo'
-                    width={130}
+                    width={120}
                     height={29}
                 />
             </div>
