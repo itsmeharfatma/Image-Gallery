@@ -22,7 +22,7 @@ function App() {
 
   return (
     <section>
-      <div className='max-container mx-auto py-12 fontStyle'>
+      <div className='max-container mx-auto py-6 md:py-12 fontStyle'>
         <ImageSearch setTerm={setTerm} />
 
         {!isLoading && images.length === 0 && <h1 className='text-5xl text-center mx-auto mt-44 mb-56'>No Images Found...</h1>}

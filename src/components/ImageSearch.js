@@ -9,16 +9,17 @@ const ImageSearch = ({ setTerm }) => {
     }
 
     return (
-        <div className='flex flex-1 justify-between items-center md:px-14'>
+        <div className='flex flex-1 justify-between items-center px-4 md:px-14'>
             <div>
                 <img
                     src='/asset/pixie-logo.png'
                     alt='Logo'
                     width={120}
                     height={29}
+                    className='max-sm:w-[100px]'
                 />
             </div>
-            <div className='w-1/3 rounded-full border border-1 border-teal-500 overflow-hidden bg-gray-100'>
+            <div className='w-1/2 md:w-1/3 rounded-full border border-1 border-teal-500 overflow-hidden bg-gray-100'>
                 <form onSubmit={onSubmit} className='w-full max-w-lg'>
                     <div className='flex items-center py-1 px-1'>
                         <input onChange={e => setText(e.target.value)} className='appearance-none bg-transparent border-none w-full text-gray-700 px-4 leading-tight focus:outline-none' type='text' placeholder='Search Image Term...' />
