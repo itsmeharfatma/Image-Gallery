@@ -9,7 +9,7 @@ const ImageSearch = ({ setTerm }) => {
     }
 
     return (
-        <div className='flex flex-1 justify-between items-center px-4 md:px-14'>
+        <div className='flex flex-1 justify-between items-center px-4'>
             <div>
                 <img
                     src='/asset/pixie-logo.png'
