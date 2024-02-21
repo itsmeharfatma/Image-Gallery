@@ -7,7 +7,7 @@ const ImageCard = ({ image }) => {
     return (
         <section>
             <div className='relative rounded-lg overflow-hidden mt-6 mr-0 md:mt-8 md:mr-4 shadow-md bg-gray-50 w-[22rem] h-[30rem] border border-gray-300'>
-                <img src={image.webformatURL} alt='' className='w-full h-64' />
+                <img src={image.webformatURL} alt='' className='w-full h-64 object-cover' />
                 <div className='px-6 py-4'>
                     <div className='font-bold text-purple-500 text-xl mb-2'>
                         Photo by {image.user}
