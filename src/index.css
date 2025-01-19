@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 @layer components {
-    .max-container {
-        max-width: 1280px;
-        margin: 0 auto;
-    }
+  .max-container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 
-    .fontStyle {
-        font-family: 'Montserrat', sans-serif;
-    }
+  .fontStyle {
+    font-family: "Montserrat", sans-serif;
+  }
 
-    .override:hover {
-        background-color: #155a5f !important;
-    }
+  .override:hover {
+    background-color: #155a5f !important;
+  }
 }
